@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout_for_pesanan"
+    android:backgroundTint="#FFE9E9"
+    tools:context=".bottombar.PesananActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layouttoolbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01">
+
+            <ImageView
+                android:id="@+id/sidebar"
+                android:layout_width="37dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.018"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.008"
+                app:srcCompat="@drawable/menu"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/iconselesai"
+                android:layout_width="123dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="51dp"
+                android:backgroundTint="#56FE3D3D"
+                android:onClick="launchPesananSelesaiActivity"
+                android:text="Selesai"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="52dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="61dp"
+                android:elevation="100dp"
+                app:srcCompat="@drawable/cil_check_circle_2" />
+
+            <Button
+                android:id="@+id/iconberjalan"
+                android:layout_width="122dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="51dp"
+                android:layout_marginLeft="12dp"
+                android:backgroundTint="#56FE3D3D"
+                android:text="   Berjalan"
+                android:textColor="@color/white"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="52dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="61dp"
+                android:layout_marginLeft="12dp"
+                android:elevation="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.019"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.083"
+                android:src="@drawable/bi_clock3"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="123dp"
+                android:layout_height="49dp"
+                android:backgroundTint="#FE3D3D"
+                android:layout_marginTop="51dp"
+                android:layout_marginLeft="280dp"
+                android:onClick="launchPesananBatalActivity"
+                android:text="Dibatalkan"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="12dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="52dp"
+                android:elevation="100dp"
+                app:srcCompat="@drawable/batalicon" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="600dp"
+                android:layout_marginLeft="180dp"
+                android:backgroundTint="#FE3D3D"
+                android:src="@drawable/qr_icon"
+                />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="413dp"
+            android:layout_height="437dp"
+            android:layout_marginBottom="54dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.534">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/card_pesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                tools:listitem="@layout/layout_pesanan_activity">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.947">
+
+            <ImageView
+                android:id="@+id/icon_Home"
+                android:layout_width="47dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:elevation="100dp"
+                android:src="@drawable/clarity_home_line" />
+
+            <TextView
+                android:id="@+id/Beranda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-43dp"
+                android:layout_marginTop="49dp"
+                android:elevation="100dp"
+                android:text="Beranda"
+                android:textColor="#B40C0C"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/pesanan_icon"
+                android:layout_width="44dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="yesGuys"
+                android:elevation="100dp"
+                android:onClick="launchPesananActivity"
+                android:src="@drawable/icon_park_outline_transaction_order_2" />
+
+            <TextView
+                android:id="@+id/Pesanann"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-44dp"
+                android:layout_marginTop="49dp"
+                android:elevation="100dp"
+                android:text="Pesanan"
+                android:textColor="#000000"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/promooo"
+                android:layout_width="47dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/promoygy" />
+
+            <TextView
+                android:id="@+id/promo"
+                android:layout_width="51dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="49dp"
+                android:elevation="100dp"
+                android:text="Promo"
+                android:textColor="#000000"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/akun_icon"
+                android:layout_width="36dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/todoo"
+                android:elevation="100dp"
+                android:onClick="launchaAkunActivity"
+                android:src="@drawable/vector_4" />
+
+            <TextView
+                android:id="@+id/Akun"
+                android:layout_width="31dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginTop="49dp"
+                android:elevation="100dp"
+                android:text="@string/akun"
+                android:textColor="#000000"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/main_menu_for_sidebar"
+        app:headerLayout="@layout/nav_header_sidebar_menu"
+        android:layout_gravity="start"
+        />
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

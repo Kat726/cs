@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#F5F3F3"
+    tools:context=".DeepCleanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="255dp">
+
+        <ImageView
+            android:id="@+id/gambarDeepDetailing"
+            android:layout_width="wrap_content"
+            android:layout_height="223dp"
+            android:src="@drawable/unyellowing_1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/DeepCleaningFirst"
+        android:layout_width="290dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/whitelayer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unyellowing"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/DeepCleaningFirst"
+        android:layout_alignTop="@+id/DeepCleaningFirst"
+        android:layout_alignEnd="@+id/DeepCleaningFirst"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="67sp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="16dp">
+
+        <RatingBar
+            android:id="@+id/MyRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="210dp"
+        >
+
+        <TextView
+            android:id="@+id/mulaiDari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulai dari"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="226dp"
+        >
+
+        <TextView
+            android:id="@+id/detailHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp35.000,00"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="176dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="280dp"
+        app:cardCornerRadius="29dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Whitening Uppper adalah paket cuci seluruh bagian sepatu
+luar dan dalam dan extra whitening upper bahan canvas.
+Waktu pengerjaan 5 sd 7 hari"
+                android:textSize="11sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp">
+
+            <TextView
+                android:id="@+id/penjalasanPertama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unyellwong + DC adalah paket cuci seluruh bagian sepatu
+luar dan dalam dan extra unyellowing. Waktu pengerjaan
+5 sd 7 hari"
+                android:textSize="11sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="176dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="492dp"
+        app:cardCornerRadius="29dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ulasanDanPenelitian"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="Ulasan dan Penelitian"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="53dp"
+                android:hint="4.0"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="41dp">
+
+            <RatingBar
+                android:id="@+id/MyRating2"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="63dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.1" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="679dp"
+        app:cardCornerRadius="29dp">
+
+        <Button
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:textAllCaps="false"
+            android:backgroundTint="#FE3D3D"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="100dp"
+        android:layout_height="97dp"
+        android:layout_marginLeft="5dp"
+        android:onClick="launchHomeMenuActivitity"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/leftarrow"/>
+
+</RelativeLayout>

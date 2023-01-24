@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".Checkout2Activity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="411dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/closeicon"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="361dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="41dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metode Pembayaran"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="101dp"
+                android:layout_marginLeft="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/visa"/>
+
+                <TextView
+                    android:id="@+id/creditCard"
+                    android:layout_width="120dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Credit Card"
+                    android:textAlignment="center" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/circle2an"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="181dp"
+                android:layout_marginLeft="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/shoope_pay"/>
+
+                <TextView
+                    android:id="@+id/ShoopePay"
+                    android:layout_width="120dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Shopee Pay"
+                    android:textAlignment="center" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/circle2an"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="261dp"
+                android:layout_marginLeft="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/gopay"/>
+
+                <TextView
+                    android:id="@+id/Gopay"
+                    android:layout_width="120dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Gopay"
+                    android:textAlignment="center" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/circle2an"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="341dp"
+                android:layout_marginLeft="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/ovo"/>
+
+                <TextView
+                    android:id="@+id/ovo"
+                    android:layout_width="120dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Ovo"
+                    android:textAlignment="center" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/circle2an"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="421dp"
+                android:layout_marginLeft="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/dana"/>
+
+                <TextView
+                    android:id="@+id/dana"
+                    android:layout_width="120dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Dana"
+                    android:textAlignment="center" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/circle2an"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="501dp"
+                android:layout_marginLeft="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/linkaja"/>
+
+                <TextView
+                    android:id="@+id/linkaja"
+                    android:layout_width="120dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Link Aja"
+                    android:textAlignment="center" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/circle2an"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="581dp"
+                android:layout_marginLeft="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/alfamart"/>
+
+                <TextView
+                    android:id="@+id/alfamart"
+                    android:layout_width="120dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Alfamart"
+                    android:textAlignment="center" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/circle2an"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="661dp"
+                android:layout_marginLeft="21dp"
+                >
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/virtualaccount"/>
+
+                <TextView
+                    android:id="@+id/AkunVirtual"
+                    android:layout_width="120dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Akun Virtual"
+                    android:textAlignment="center" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow_down"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>

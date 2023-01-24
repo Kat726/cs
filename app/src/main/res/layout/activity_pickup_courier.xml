@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:id="@+id/ChooseCourier"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="312dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chooseCourier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Kurir"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:background="#F1EAEA">
+
+            <TextView
+                android:id="@+id/ChooseWhatYouChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih tipe pesanan"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="705dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="1dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/wavy_buddies_truck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Pengantaran tanpa Kontak"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="105dp">
+            <ImageView
+                android:id="@+id/truckIcon"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/wavy_buddies_box"
+                />
+            <TextView
+                android:id="@+id/boxIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="23dp"
+                android:text="Ambil Sendiri"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:background="#F1EAEA">
+
+            <TextView
+                android:id="@+id/ChooseOrderLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih tipe pesanan"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="178dp"
+            android:background="#F1EAEA">
+
+            <TextView
+                android:id="@+id/ChooseYourOrderDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih durasi pesanan"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="405dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="197dp"
+            android:layout_marginEnd="0dp">
+
+            <TextView
+                android:id="@+id/ambilDalamMinutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:text="Ambil dalam 35 Menit"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            >
+
+            <Button
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1C8D3B"
+                android:text="Lanjutkan"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.84"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

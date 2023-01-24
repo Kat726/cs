@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="250dp"
+    tools:context=".DeepClean2PilihTreatmentDeskripsiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/chooseCourier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Treatment"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:layout_marginLeft="-119dp"
+            android:layout_marginTop="39dp">
+
+            <LinearLayout
+                android:layout_width="381dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/circle2an" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Package 3 Pairs"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Rp320.000"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="381dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/circle2an" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Package 4 Pairs"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Rp240.000"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="381dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="90dp">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/circle2an" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Express Priority On The Road"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="128dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Rp135.000"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="381dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="130dp">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/circle2an" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Express Priority 1 Day"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="164dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Rp120.000"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="437dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="219dp">
+
+        <TextView
+            android:id="@+id/DeskripsiBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi Barang"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="437dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="259dp">
+
+        <EditText
+            android:id="@+id/namaBrand"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:hint="brand"
+            android:textSize="12sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="437dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="317dp">
+
+        <EditText
+            android:id="@+id/catatanBrand"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="9dp"
+            android:hint="Catatan : Merk, Warna , Ukuran , dll(Optional)"
+            android:textSize="12sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="52dp">
+
+        <Button
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:backgroundTint="#FE3D3D"
+            android:onClick="launchCheckOutActivity1"
+            android:text="Pesan"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

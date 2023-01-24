@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/codicon_home"
+            android:title="@string/menu_beranda"
+            />
+        <item
+            android:id="@+id/nav_pesanan"
+            android:icon="@drawable/icon_park_outline_transaction_order"
+            android:title="Pesanan" />
+        <item
+            android:id="@+id/nav_notif"
+            android:icon="@drawable/bx_bell"
+            android:title="Notifikasi" />
+        <item
+            android:id="@+id/nav_promo"
+            android:icon="@drawable/promoygy"
+            android:title="Promo" />
+
+        <item android:title="Preferensi">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_account"
+                        android:icon="@drawable/icon_park_outline_people"
+                        android:title="Akun" />
+                    <item
+                        android:id="@+id/nav_setting"
+                        android:icon="@drawable/ant_design_setting_outlined"
+                        android:title="Pengaturan" />
+
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Bantuan dan Privasi">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_commonRequlation"
+                        android:icon="@drawable/bi_shield_exclamation"
+                        android:title="Ketentuan Umum" />
+                    <item
+                        android:id="@+id/nav_PrivRules"
+                        android:icon="@drawable/ic_menu_slideshow"
+                        android:title="Kebijakan Privasi" />
+                    <item
+                        android:id="@+id/nav_CS_call"
+                        android:icon="@drawable/bi_shield_exclamation"
+                        android:title="Hubungi CS Kami" />
+                </group>
+            </menu>
+        </item>
+    </group>
+
+</menu>
